@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}Парсер по тексту{% endblock %}
+
+
+{% block header %}
+    <div class="header">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="{% static 'img/logo.png' %}" alt="" width="100">
+                <span class="fs-4">Shazam Parser</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="{% url 'main_page' %}" class="nav-link" aria-current="page">Парсер по файлу</a></li>
+                <li class="nav-item"><a href="{% url 'parser-file' %}" class="nav-link">Парсер по названию</a></li>
+                <li class="nav-item"><a href="{% url 'parser-text' %}" class="nav-link active">Парсер по тексту</a></li>
+              </ul>
+            </header>
+          </div>
+    </div>
+    {% endblock %}
+
+{% block main_body %}
+456
+{% endblock %}
